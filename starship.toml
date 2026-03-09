@@ -1,0 +1,4 @@
+# Starship Config
+
+[cmd_duration] # module shows how long the last command took to execute
+disabled=true
