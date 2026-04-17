@@ -4,7 +4,7 @@
 
 mkdir -p ~/.config
 
-ln -sf ~/dotfiles/bashrc ~/.bashrc
-ln -sf ~/dotfiles/starship.toml ~/.config/startship.toml
+ln -sf ~/dotfiles-devpod/bashrc ~/.bashrc
+ln -sf ~/dotfiles-devpod/starship.toml ~/.config/startship.toml
 
 echo "Dotfiles linked!"
