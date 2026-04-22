@@ -1,4 +1,9 @@
-echo "Hello World" > /tmp/hello
+#!/bin/bash
 
-echo "set -o vi" >> ~/.bashrc
+set -euo pipefail
 
+if ! command -v chezmoi >/dev/null; then
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:zimpelben/dotfiles-devpod.git
+fi
+
+exit 0
